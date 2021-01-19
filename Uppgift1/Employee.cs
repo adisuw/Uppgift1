@@ -8,6 +8,10 @@ using Uppgift1.Utils;
 
 namespace Uppgift1
 {
+    /// <summary>
+    /// Employee class is our model class which contains states and behavior of the Employee
+    /// only holds the object the value with some validation 
+    /// </summary>
     class Employee
     {
         private string name;
@@ -15,7 +19,7 @@ namespace Uppgift1
         private int id;
         public Employee(string name, double salary, int id)
         {
-            Name = name;
+            Name = name;//validate first then, assign
             Salary = salary;
             Id = id;
         }
